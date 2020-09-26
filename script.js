@@ -25,21 +25,21 @@ $(document).ready(function () {
         if(timeNum >= 1 && timeNum <= 5){
             timeNum += 12;
         }
-        console.log(timeNum);
-        console.log(curTime);
-        
-        if(timeNum < curTime){
-            console.log('GREY');
-            //set css style
-            $(".schedule").css("background-color", "grey");
-        } else if(timeNum > curTime){
 
+        //Change the colors of the schedule input but adding a past, future, or present class    
+        if(timeNum < curTime){
+            //set css style
+            $(".scheduleID").addClass("past");
+        } else if(timeNum > curTime){
             //set a different style
-            $(".schedule").css("background-color", "green");
+            $("." + scheduleID).addClass("future");
         } else {
             //set final style
-            $(".schedule").css("background-color", "red");
+            $(".scheduleID").addClass("present");
         }
+
+        //counter will increase by 1 and continue in loop
+        counter++;
     }
 
     $('.schedule').text(localStorage.getItem('notes'));
