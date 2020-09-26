@@ -4,13 +4,13 @@ The Work Day Scheduler calendar allows the user to save events for each hour of 
 
 ## Process
 
-In this homework, we had to use the Moment.js library to work with date and time. I pseudo coded the process on how to build the function of the calendar and the layout which helped out greatly. 
+In this homework, we had to use the Moment.js library to work with date and time. I pseudo coded the process on how to build the function of the calendar and the layout which helped out greatly. Creating the function to get real time was an extremely arduous task for me. I had to test the funtion several times to see if my current time would change the colors inside the time blocks. Generating the save buttons took some time as well because I didn't want to hard code every single button. Almost everything was created through the script.js file. Getting every single function to work together was a challenging yet interesting learning experience for me. Below is a screen show of my Work Day Scheduler. It is very rewarding to see my calendar change colors with real time!
 
-![Image](screenshot12.png)
+![Image](.png)
 
-I never thought I would be so happy to see random characters/numbers generated. It was extremely satisfying to see the password generated below:
+ Below is a snippet of the most difficult part of my code:
 
-![Image](screenshot13.png)
+![Image](.png)
 
 ### Installing/Technology Used
 
@@ -29,32 +29,22 @@ The following platforms were required to build this website:
 
 ## Deployed Link
 
-* [See Live Site](https://kellykim831.github.io/Password_Generator/)
+* [See Live Site]()
 
 
 ## Authors
 
 * **Kelly Kim** 
 
-- [Link to Portfolio Site](https://kellykim831.github.io/Responsive_Portfolio/)
 - [Link to Github](https://github.com/kellykim831)
 - [Link to LinkedIn](https://www.linkedin.com/in/realtorkellykim/)
 - [Link to Facebook](https://www.facebook.com/kimkelz)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 
 ## Acknowledgments
 
 * [Link to Google](https://www.google.com)
 * [Link to W3 Schools](https://www.w3schools.com)
 * [console.log()](https://developer.mozilla.org/en-US/docs/Web/API/Console/log)
-* [alert()](https://www.w3schools.com/jsref/met_win_alert.asp)
-* [prompt()](https://www.w3schools.com/jsref/met_win_prompt.asp)
 * [confirm()](https://www.w3schools.com/jsref/met_win_confirm.asp)
-* [document.write()](https://www.w3schools.com/jsref/met_doc_write.asp)
-* [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
-* [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
-* [DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
 * [Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 * [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
