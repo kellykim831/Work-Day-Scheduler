@@ -33,7 +33,7 @@ The following platforms were required to build this website:
 
 ## Deployed Link
 
-* [See Live Site]()
+* [See Live Site]( https://kellykim831.github.io/Work-Day-Scheduler/)
 
 
 ## Authors
@@ -49,6 +49,5 @@ The following platforms were required to build this website:
 * [Link to Google](https://www.google.com)
 * [Link to W3 Schools](https://www.w3schools.com)
 * [console.log()](https://developer.mozilla.org/en-US/docs/Web/API/Console/log)
-* [confirm()](https://www.w3schools.com/jsref/met_win_confirm.asp)
 * [Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 * [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
