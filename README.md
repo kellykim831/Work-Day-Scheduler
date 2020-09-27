@@ -4,13 +4,17 @@ The Work Day Scheduler calendar allows the user to save events for each hour of 
 
 ## Process
 
-In this homework, we had to use the Moment.js library to work with date and time. I pseudo coded the process on how to build the function of the calendar and the layout which helped out greatly. Creating the function to get real time was an extremely arduous task for me. I had to test the funtion several times to see if my current time would change the colors inside the time blocks. Generating the save buttons took some time as well because I didn't want to hard code every single button. Almost everything was created through the script.js file. Getting every single function to work together was a challenging yet interesting learning experience for me. Below is a screen show of my Work Day Scheduler. It is very rewarding to see my calendar change colors with real time!
+In this homework, we had to use the Moment.js library to work with date and time. I pseudo coded the process on how to build the function of the calendar and the layout which helped out greatly. Creating the function to get real time was an extremely arduous task for me. I had to test the funtion several times to see if my current time would change the colors inside the time blocks. Generating the save buttons took some time as well because I didn't want to hard code every single button. Almost everything was created through the script.js file. Getting every single function to work together was a challenging yet interesting learning experience for me. Below is a screen show of my Work Day Scheduler. It is very rewarding to see my calendar change colors with real time! Currently it is grey since the real time is 6:30pm.
 
-![Image](.png)
+![Image](calendar.png)
 
- Below is a snippet of the most difficult part of my code:
+ Below is a snippet of my local storage in action:
 
-![Image](.png)
+![Image](localstorage.png)
+
+Figuring out how to come up with a code that would allow real time to change the time blocks into the appropriate colors was difficult:
+
+![Image](colorcode.png)
 
 ### Installing/Technology Used
 

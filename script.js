@@ -1,7 +1,5 @@
 $(document).ready(function () {
-    var x = localStorage.getItem('input');
-    document.getElementsByClassName('schedule').innerHTML = x;
-      
+    
     $("#currentDay").text(moment().format("dddd, MMMM Do"));
     var curTime = parseInt(moment().format('HH'));
     // var curTime = 10; just for testing.
@@ -14,7 +12,7 @@ $(document).ready(function () {
         // Create a variable to name a schedule class with the counter 
         var scheduleId = "schedule" + counter;
 
-        // HTML that contains the hour-container, hour, the schedule input, and the save button.
+        // Partial bootstrap code. HTML that contains the hour-container, hour, the schedule input, and the save button.
         var html = "<div class='input-group input-group-lg hour-container'><div class='input-group-text hour' id='inputGroup-sizing-lg'>" + times[i] + "</div><input type='text' class='form-control " + scheduleId + "' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-lg'><button type='button' class='saveBtn'>Save</button></div>"
         $(".container").append(html);
 
