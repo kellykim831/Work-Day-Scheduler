@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    var x = localStorage.getItem('notes');
+    var x = localStorage.getItem('input');
     document.getElementsByClassName('schedule').innerHTML = x;
       
     $("#currentDay").text(moment().format("dddd, MMMM Do"));
     var curTime = parseInt(moment().format('HH'));
-    // var curTime = 10;
+    // var curTime = 10; just for testing.
 
     // Create a counter and set default to 1 to separately identify the schedule class
     var counter = 1;
@@ -15,7 +15,7 @@ $(document).ready(function () {
         var scheduleId = "schedule" + counter;
 
         // HTML that contains the hour-container, hour, the schedule input, and the save button.
-        var html = "<div class='input-group input-group-lg hour-container'><div class='input-group-text hour' id='inputGroup-sizing-lg'>" + times[i] + "</div><input type='text' class='form-control " + scheduleId + "' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-lg'><button type='button' class='btn btn-info'>Save</button></div>"
+        var html = "<div class='input-group input-group-lg hour-container'><div class='input-group-text hour' id='inputGroup-sizing-lg'>" + times[i] + "</div><input type='text' class='form-control " + scheduleId + "' aria-label='Sizing example input' aria-describedby='inputGroup-sizing-lg'><button type='button' class='saveBtn'>Save</button></div>"
         $(".container").append(html);
 
         // This var will remove the last 2 characters of times[i] (the AM or PM characters)
@@ -41,15 +41,46 @@ $(document).ready(function () {
         counter++;
     }
 
-    $('.schedule').text(localStorage.getItem('notes'));
-    $('button').click(function(){
-        localStorage.setItem('notes',$('input').val());
-        $('.schedule').text($('input').val());
+
+    var saveButton = $(".saveBtn");
+
+    saveButton.on("click", function(){
+        var notes = $(this).prev().val();
+        var key = $(this).parent().find(".hour").text();
+
+        localStorage.setItem(key,notes);
+        
+    });
+
+    $("input").each(function(){
+
+        var key = $(this).prev().text();
+        var savedNotes = localStorage.getItem(key);
+        $(this).val(savedNotes);
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // $('.schedule').text(localStorage.getItem('input'));
+    // $('button').click(function(){
+    //     localStorage.setItem('input',$('input').val());
+    //     $('.schedule').text($('input').val());
+    // })
 
     // if(localStorage.getItem('schedule') === ''){
     //     $('input').addClass('future');
     // }
-})
-
+});
 
